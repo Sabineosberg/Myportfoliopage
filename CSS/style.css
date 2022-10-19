@@ -1,18 +1,283 @@
-/* Shift + alt + 8 = Curly bracket on Mac.*/
+/*-----HERO PAGE-----*/
 
-body {
-    background-color: red;
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: 20px;
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&family=Work+Sans&display=swap');
+
+
+/* Skriftstørrelse for mobil omgjort til 1 rem. */
+html{
+    font-size: 12px 
 }
 
-header {
-    display: flex;
+@media screen and (min-width: 700px) {
+    html {
+        font-size: 15px; /* 1 rem verdi i desktop versjon */
+    }
+}
+
+#logo {
+    font-family: 'Vollkorn', serif;
+    font-size: 2rem;
+    margin: 1rem;
+    text-decoration:none;
+    color:black;
+    display: block;
+    padding: 15px;
+}
+
+#logo a {
+ text-decoration: none;
+}
+
+ul {
+    font-family: 'Work Sans' sans-serif;
+    font-size:16px;
+    margin-right:20px;
+    }
+
+a:link {
+color:black;
+}
+
+li a {
+    display: block;
+    padding: 15px;
+    text-decoration:none;
+    }
+
+#resume {
+    border-style:groove;
+    border-radius:4px;
+    border-width: 2px;
+    padding-left:4px;
+    padding-right:4px;
+    border-color:black;
+    }
+
+body {
+    background-image: url(https://st4.depositphotos.com/38616904/39992/i/450/depositphotos_399924992-stock-photo-white-pink-blurry-gradient-background.jpg);
+    background-size:300%;
+}
+
+.header {
+    display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 120px;
+    justify-content:space-between;
+    height: 6rem;
+    text-decoration: none;
+    color:black;
     align-items: center;
-    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 0px;
+    border-color: black;
+    border-bottom:solid;
+    border-width: 1px;
+    background-size:300%;
+    background-image: url(https://st4.depositphotos.com/38616904/39992/i/450/depositphotos_399924992-stock-photo-white-pink-blurry-gradient-background.jpg);
+}
+
+@media print {
+    header {
+        display:none;
+    }
+}
+
+.header a {
+    color:black;
+    text-decoration: none;
+}
+
+header nav {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    header nav {
+        display: block;
+    }
+}
+
+
+header nav ul li {
+    color: black;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+}
+
+
+header nav ul li:hover {
+    color: #ff00ff;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 700px) {
+    header ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2rem;
+    }
+}
+
+.hamburgermenu {
+    width:5%;
+}
+
+.hamburgermenu {
+    display: block;
+}
+
+@media screen and (min-width: 700px) {
+    .hamburgermenu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header {
+        display: block;
+        background-color: aliceblue;
+    }
+}
+
+.h1{
+    font-family: 'Vollkorn', serif;
+    font-size: 3rem;
+    margin-top: 100px;
+}
+
+.frontcircle {
+    width:28%;
+    margin-left:190px;
+    margin-top: -120px;
+}
+
+.first-paragraph {
+    max-width: 930px;
+    margin: 0 auto 0 auto;
+    text-align:left;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 700px) {
+    .first-paragraph {
+        flex-flow: row nowrap;
+    }
+}
+
+.first-paragraph article {
+    margin: 0 4rem 4rem 4rem;
+    width: 80%;
+    margin-top:50px;
+}
+
+.main-picture {
+    position: relative;
+    margin-top:120px;
+    margin-right:-40px;
+    width:40%;
+    height: 400px;
+    
+}
+
+.links li {
+    display:inline-block;
+    flex-direction:row;
+    padding: 1rem;
+    text-decoration:none;
+    margin-top: 30px;
+    margin-left:-20px;
+}
+
+.links li a {
+    color:black;
+    text-decoration: none;
+}
+
+.links ul img {
+    transform: translateY(20px);
+}
+
+.links nav {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    .links nav {
+        display: block;
+    }
+}
+
+.arrow li {
+    width: 10%;
+    display:inline-block;
+    flex-direction:row;
+    margin-top:30px;
+    position: relative;
+}
+
+
+
+
+
+/*-----WORK PAGE-----*/
+
+#textworkpage {
+    margin-top: 150px;
+    margin-left:109px;
+    font-size: 1.5rem;
+    font-family: 'Work Sans' sans-serif;
+}
+
+.worksection {
+   display: flex;
+   margin-top:90px;
+   margin-left:-6px;
+   flex-flow: row wrap;
+   gap: 20px;
+   justify-content: center;
+   padding:20px;
+   font-family: 'Work Sans' sans-serif;
+}
+
+.card {
+    width: 400px;
+    height: 240px;
+    padding-left:20px;
+    padding-bottom:40px;
+    border: 2px solid #C78F40;
+    font-family: 'Work Sans' sans-serif;
+}
+
+.card p {
+    font-size: 55px;
+    color: #C78F40;
     padding: 20px;
+    font-family: 'Work Sans' sans-serif;
+}
+
+
+
+
+/* -----CONTACT PAGE-----*/
+
+#textcontactpage {
+    margin-top: 100px;
+    margin-left:100px;
+    font-size: 1.5rem;
+    font-family: 'Work Sans' sans-serif;
+}
+
+.pharagraphcontact {
+    margin-top:150px;
+    margin-left:100px;
+    font-size:1rem;
 }
 
